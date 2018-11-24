@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='http://oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.css' />
+        <script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+        <script src='http://oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.js'></script>
+        <title>Our Sample App</title>
+    </head>
+    <body class='ui container'>
+        <div class="ui inverted segment">
+            <div class="ui inverted secondary pointing menu">
+                <a class="item">
+                Home
+                </a>
+                <a class="item">
+                Events
+                </a>
+                <div class='right menu'>
+                    <a class="item">
+                    Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class='ui basic segment'>            
+            <h1 class='ui header'>
+                <div class='ui three column stackable grid'>
+                    <div class='middle aligned row'>
+                        <div class='column'><img class='ui large circular image' src='./fair.jpg'></img></div>
+                        <div class='column'>All City Carnival</div>
+                        <div class='column'><div class='ui star readonly rating' data-rating='4'></div></div>
+                    </div>
+                </div>
+            </h1>           
+
+            <h2>Description:</h2>
+            <p>The All City Carnival is held every year to kick off the summer. It's our chance to gather folks from all across town to celebrate
+                the beginning of summer. This four night extravaganza features shows from local bands, local food vendors and all the rides you can handle.
+                The midway games are always a favorite for young and old alike. Come celebrate with your neighbors and see if you can't walk home 
+                with a giant stuffed teddy bear!</p>
+       </div>
+    
+        <form class='ui form'>
+            <h3 class='ui dividing header'>Ratings</h3>
+            <div class='fields'>
+                <div class='inline required field'>
+                    <label>Name</label>
+                    <input type='text'/>
+                </div>
+                <div class='inline field'>
+                    <div class='ui star rating'></div>
+                </div>
+            </div>
+            <div class='field'>
+                <label>Comments:</label>
+                <textarea rows=10></textarea>
+            </div>
+            <button class='ui button'>Save Review</button>
+        </form>
+        <div class='ui divider'></div>
+        <div class='ui comments'>
+            <div class='comment'>
+                <a class="avatar">
+                    <img src="./Male_2_Circle.png">
+                </a>
+                <div class='content'>
+                   <span class='author'>Dan Green</span>
+                   <div class='metadata'>
+                        <div class='ui star readonly rating' data-rating='5'></div>
+                   </div>
+                   <div class='text'>My family loves this. It's all the kids talk about once the weather starts turning warm.</div>
+                </div>
+            </div>
+            <div class='comment'>
+                <a class="avatar">
+                    <img src="./Female_3.png">
+                </a>
+                <div class='content'>
+                    <span class='author'>Janice Bosely</span>     
+                    <div class='metadata'>      
+                        <div class='ui star readonly rating' data-rating='5'></div>
+                    </div>
+                    <div class='text'>My grandkids love this!</div>
+                </div>
+            </div>
+            <div class='comment'>
+                <a class="avatar">
+                    <img src="./Female_1.png">
+                </a>
+                <div class='content'>
+                    <span class='author'>Julie Gordon</span>
+                    <div class='metadata'>           
+                        <div class='ui star readonly rating' data-rating='3'></div>
+                    </div>
+                    <div class='text'>It's usually a good time. Overall, I can't complain. I'm disappointed that last year they decided
+                        to cancel the end-of-the-carnival fireworks. That was the best part! But we'll be back this year.
+                    </div>               
+                </div> 
+            </div>
+            <div class='comment'>
+                <a class="avatar">
+                    <img src="./Male_7.png">
+                </a>
+                <div class='content'>
+                    <span class='author'>Casey Smith</span>
+                    <div class='metadata'>           
+                        <div class='ui star readonly rating' data-rating='3'></div>
+                    </div>
+                    <div class='text'>Bring back the twister!!!</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script>
+            $('.rating').rating({maxRating: 5});
+            $('.readonly.rating').rating('disable');
+            $('.dropdown').dropdown();
+        </script>
+    </footer>
+</html>
